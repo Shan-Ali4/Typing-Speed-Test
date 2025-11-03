@@ -39,3 +39,24 @@ body {
     justify-content: space-between;
     width: calc(100% - 140px);
 }
+.result-detail li {
+    display: flex;
+    height: 20px;
+    list-style: none;
+    align-items: center;
+}
+.content button {
+    width: 105px;
+    outline: none;
+    border: none;
+    color: #070707;
+    background-color: rgb(196, 191, 191);
+    padding: 8px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+.content button:active {
+    transform: scale(0.97);
+}
