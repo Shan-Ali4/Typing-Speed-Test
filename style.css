@@ -24,6 +24,12 @@ body {
     border-radius: 10px;
     border: 1px solid lightgrey;
 }
+.wrapper .input-field {
+    padding: 13px 20px 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+}
 .content-box .content {
     margin-top: 17px;
     display: flex;
@@ -59,4 +65,23 @@ body {
 }
 .content button:active {
     transform: scale(0.97);
+}
+.typing-test p span {
+    position: relative;;
+}
+.typing-test p span.active {
+    color: #0ae9b9;
+}
+.typing-test p span.correct {
+    color: darkgreen;
+}
+.typing-test p span.incorrect {
+    color: darkred;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+::selection {
+    background: darkslategray;
+    color: #fff;
 }
